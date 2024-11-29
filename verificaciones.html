@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificación de Accesibilidad y Validación</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Verificación de Accesibilidad y Estándares<br></h1>
+        <a href="./index.html" class="enlace-nav">PRESENTACIÓN</a>
+    </header>
+    <main id="verificaciones">
+        <section>
+            <h2>Contraste de colores (AAA)</h2>
+            <p>Verifiqué los contrastes de colores según el WCAG utilizando <a href="https://webaim.org/">WebAIM</a></p>
+            <div id="imagenes">
+                <img src="./imgs/validacion1.png" alt="Captura de pantalla de los resultados del contraste AAA">
+                <img src="./imgs/validacion2.png" alt="Captura de pantalla de los resultados del contraste AAA">
+                <img src="./imgs/validacion3.png" alt="Captura de pantalla de los resultados del contraste AAA">
+                <img src="./imgs/validacion4.png" alt="Captura de pantalla de los resultados del contraste AAA">
+                <img src="./imgs/validacion5.png" alt="Captura de pantalla de los resultados del contraste AAA">
+            </div>
+        </section>
+        <section>
+            <h2>Mejoras de accesibilidad</h2>
+            <p>Mejoré los siguientes aspectos basados en la herramienta Wave:</p>
+            <ul>
+                <li>Agregué atributos <code>aria-label</code> a los enlaces.</li>
+                <li>Agregué atributos <code>alt</code> a las imagenes.</li>
+                <li>Corregí la jerarquía de encabezados.</li>
+                <li>Usé colores con suficiente contraste.</li>
+            </ul>
+            </section>
+        <section>
+            <h2>Validación del código</h2>
+            <h3>HTML</h3>
+            <p>Validé el HTML con el W3C Validator:</p>
+            <div class="validacion-w3c">
+                <img src="imgs/validacion-index.png" alt="Validación de index.html">
+                <img src="imgs/validacion-pagina2.png" alt="Validación de verificaciones.html">
+            </div>
+
+            <h3>CSS</h3>
+            <p>Validé el CSS con el W3C Validator:</p>
+            <!--VALIDACION CSS-->
+            <p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="¡CSS Válido!" />
+                </a>
+            </p>
+            <div class="validacion-w3c">
+            <img src="imgs/validacion-css.png" alt="Validación de verificaciones.html">
+            </div>
+        </section>
+        <section>
+            <h2>Pautas de accesibilidad implementadas</h2>
+            <ul>
+                <li>Contrastes AAA en todos los textos.</li>
+                <li>Jerarquía semántica correcta.</li>
+                <li>Navegación por teclado funcional.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Alejandro Garrido</p>
+    </footer>
+</body>
+</html>

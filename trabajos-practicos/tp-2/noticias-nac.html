@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        section {
+            flex: 3;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        article h2 {
+            margin: 0;
+            color: #333;
+        }
+        article p {
+            margin: 10px 0;
+        }
+        article a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        article a:hover {
+            text-decoration: underline;
+        }
+        figure {
+            margin: 10px 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            margin-left: 20px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sitio de Noticias</h1>
+        <p>Tu fuente de información</p>
+    </header>
+
+    <nav>
+        <a href="#nacional">Nacional</a>
+        <a href="./noticias-int.html">Internacional</a>
+        <a href="./noticias-dep.html">Deportes</a>
+        <a href="./noticias-eco.html">Economía</a>
+    </nav>
+
+    <main>
+        <section id="nacional">
+            <h2>Noticias Nacionales</h2>
+            <article style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <figure style="flex: 1; margin-right: 15px;">
+                    <img src="./imgs/noticias2.jpeg" alt="Imagen de la noticia 1" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    <figcaption style="text-align: center;">La iniciativa obtuvo 139 votos afirmativos, 36 negativos y 59 abstenciones.</figcaption>
+                </figure>
+                <div style="flex: 2;">
+                    <h3>Diputados aprobó un proyecto para prevenir la ludopatía infantil</h3>
+                    <p>La norma es impulsada por la oposición y está cerca de obtener la media sanción. La iniciativa busca actualizar las medidas para prevenir la adición, pero enfrenta un fuerte lobby que complica su tratamiento</p>
+                    <a href="https://www.infobae.com/politica/2024/11/27/camara-de-diputados-en-vivo-comenzo-la-sesion-por-las-modificaciones-a-la-ley-de-ludopatia-y-juego-online/">Leer más...</a>
+                </div>
+            </article>
+            <article style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <figure style="flex: 1; margin-right: 15px;">
+                    <img src="./imgs/noticias3.jpeg" alt="Imagen de la noticia 1" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    <figcaption style="text-align: center;">Fue una de las respuestas al Senado que dio el Poder Ejecutivo en el informe de Jefatura de Gabinete.</figcaption>
+                </figure>
+                <div style="flex: 2;">
+                    <h3>El Gobierno afirmó ante el Congreso que podría volver a los mercados a mitad del 2025 para emitir deuda “a tasa razonable”</h3>
+                    <p>El Gobierno afirmó ante el Congreso que volver a los mercados internacionales a mitad del año que viene es una de las opciones con las cuales el Ministerio de Economía afrontará el pago de los vencimientos de deuda a lo largo del 2025.</p>
+                    <a href="https://www.infobae.com/economia/2024/11/27/el-gobierno-afirmo-ante-el-congreso-que-podria-volver-a-los-mercados-a-mitad-del-2025-para-emitir-deuda-a-tasa-razonable/">Leer más...</a>
+                </div>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Publicidad</h3>
+            <p>Anuncio 1</p>
+            <p>Anuncio 2</p>
+            <p>Anuncio 3</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Contacto: agarrido@uade.edu.ar | Teléfono: (123) 456-7890</p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Uso</a></p>
+    </footer>
+</body>
+</html>

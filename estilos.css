@@ -1,0 +1,238 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333; 
+}
+
+header {
+    background-color: #003366; 
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    border-bottom: 5px solid #0039E6;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+header .descripcion {
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    margin: 1rem 0;
+    font-size: 1rem;
+    color: white;
+}
+
+header .contacto {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+header .contacto p {
+    margin: 0.2rem 0;
+}
+
+.enlace-nav {
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 16px; 
+    padding: 3px 5px;
+    border: 2px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.enlace-nav:hover {
+    background-color: white;
+    color: #003366; 
+    text-decoration: underline;
+}
+
+
+
+.mosaic-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.mosaic-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.mosaic-item {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    width: 18%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mosaic-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo de los titulos de los ejercicios */
+.mosaic-item h3 {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.mosaic-item p {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+}
+
+.mosaic-item a {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    color: #555; 
+    font-size: 0.9rem;
+    font-weight: 400;
+    display: block;
+    margin: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.mosaic-item a:hover {
+    color: #0039E6;
+}
+
+/* Footer */
+footer {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    background-color: #003366; 
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+#verificaciones{
+    margin-left: 10px;
+}
+#imagenes {
+        display: flex;
+        gap: 10px; 
+        flex-wrap: wrap;
+}
+    
+#imagenes img {
+    width: 240px; 
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.validacion-w3c{
+    display: flex;
+        gap: 10px;
+        flex-wrap: wrap; 
+}
+.validacion-w3c img {
+    width: 500px; 
+    height: auto; 
+    border-radius: 10px; 
+    object-fit: cover; 
+}
+
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .mosaic-row {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .mosaic-item {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .mosaic-item {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
+
+#imagenes {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.validacion-w3c {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+
+header h1 {
+    font-size: 1.8rem;
+}
+
+.enlace-nav {
+    font-size: 14px; 
+    padding: 2px 4px;
+}
+
+h2 {
+    font-size: 1.5rem; 
+}
+
+#verificaciones {
+    margin: 0; 
+    padding: 0 15px; 
+}
+
+section {
+    margin-bottom: 2rem; 
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    .enlace-nav {
+        font-size: 12px; 
+    }
+
+    #imagenes img {
+        width: 150px;
+    }
+
+    .validacion-w3c img {
+        width: 200px;
+    }
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Viaje al centro de la Tierra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: black;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        .contenido-principal {
+            display: flex;
+        }
+
+        .columna-lateral {
+            width: 25%; 
+        }
+
+        .contenido {
+            width: 75%; 
+            font-size: 12px;
+            margin-right: 15%
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        .listas li {
+            margin-bottom: 2px;
+            padding-left: 20px;
+            line-height: 1.4;
+            font-size: 11px;
+        }
+
+        .columna-lateral ul li::before {
+            content: "• ";
+            color: #000;
+            font-weight: bold;
+        }
+
+        .personajes {
+            border: 1px solid #000;
+            padding: 20px;
+            margin-top: 20px;
+            background: #fff;
+            margin-left: 20%;
+            margin-right: 15%;
+        }
+
+        h3 {
+            font-size: 1.2em;
+            margin-top: 0px;
+            margin-bottom: 0px;
+        }
+
+        .dos-columnas {
+            display: flex; 
+            gap: 20px;
+        }
+
+        .dos-columnas > div {
+            flex: 1; 
+        }
+
+        .dos-columnas ul {
+            font-size: 10px;
+            list-style-type: disc;
+            margin-left: 20px;
+            padding: 0;
+        }
+
+        #titulo2 {
+            text-align: start;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 5px;
+        }
+
+        .contenido2 {
+            margin-top: 0px;
+            font-size: 12px;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Viaje al centro de la Tierra</h1>
+
+        <div class="contenido-principal">
+            <div class="columna-lateral">
+                <h2>Datos del libro</h2>
+                <ul class="listas">
+                    <li>Título original: Voyage au <br> centre de la Terre</li>
+                    <li>Autor: Julio Verne</li>
+                    <li>Género: Novela</li>
+                    <li>Año de publicación: 1862</li>
+                    <li>País: Francia</li>
+                    <li>Páginas: 360</li>
+                </ul>
+            </div>
+            <div class="contenido">
+                <h2>Resumen</h2>
+                <div>
+                    <p>La novela cuenta la historia de Axel, quien vive con su tío Otto Lidenbrock en Hamburgo. Después
+                        de descifrar un criptograma en un manuscrito islandés, el tío decide viajar a Islandia para
+                        buscar el centro de la Tierra. Axel, su tío y un guía llamado Hans emprenden un peligroso viaje
+                        al volcán Snæfellsjökull, donde encuentran la entrada al centro de la Tierra. A lo largo del
+                        camino, enfrentan dificultades como la falta de agua y la pérdida de Axel. Finalmente, llegan a
+                        una gran caverna donde encuentran un mar y se embarcan en una peligrosa travesía, encontrando
+                        monstruos marinos en el camino.</p>
+                    <p>La historia comienza con Axel describiendo la vida en la casa de su tío y cómo descifran el
+                        criptograma que los lleva a Islandia. Después de llegar a la cima del volcán, descienden por una
+                        chimenea y se pierden, tomando el camino equivocado. Sin embargo, logran sobrevivir a la sed y
+                        encuentran agua bajo las rocas. Axel se pierde temporalmente pero finalmente se reúne con sus
+                        compañeros y encuentran una gran caverna con un mar. Después de embarcarse en una balsa, se
+                        encuentran con monstruos marinos pero logran sobrevivir. </p>
+                    
+                    <p>En resumen, la historia es una emocionante aventura de tres hombres que buscan llegar al centro de la Tierra. A
+                        lo largo del camino, enfrentan peligros y dificultades, pero logran sobrevivir gracias a su ingenio y
+                        determinación. La novela muestra la fascinación de Verne por la ciencia y la exploración, así como su habilidad
+                        para crear una emocionante trama.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="personajes">
+            <h2 id="titulo2">Personajes</h2>
+            <div class="dos-columnas">
+                <div>
+                    <h3>Principales:</h3>
+                    <ul>
+                        <li>Axel: sobrino del profesor Lidenbrock.</li>
+                        <li>Otto Lidenbrock: profesor de mineralogía, tío de Axel, padrino de Gräuben y organizador del
+                            viaje al centro de la Tierra. Es un sabio egoísta.</li>
+                        <li>Hans: antes cazador de unas aves islandesas llamadas eíderes y luego guía islandés que
+                            contrata Lidenbrock para el viaje al centro de la Tierra.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Secundarios:</h3>
+                    <ul>
+                        <li>Gräuben: novia de Axel, ahijada de Lidenbrock.</li>
+                        <li>Marta: empleada del profesor Lidenbrock.</li>
+                        <li>Arne Saknusemm: escritor del pergamino que encontró Otto Lidenbrock para iniciar el viaje al
+                            centro de la tierra.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+

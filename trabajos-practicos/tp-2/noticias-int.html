@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        section {
+            flex: 3;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        article h2 {
+            margin: 0;
+            color: #333;
+        }
+        article p {
+            margin: 10px 0;
+        }
+        article a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        article a:hover {
+            text-decoration: underline;
+        }
+        figure {
+            margin: 10px 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            margin-left: 20px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Noticias</h1>
+        <p>Tu fuente de información</p>
+    </header>
+
+    <nav>
+        <a href="./noticias-nac.html">Nacional</a>
+        <a href="#internacional">Internacional</a>
+        <a href="./noticias-dep.html">Deportes</a>
+        <a href="./noticias-eco.html">Economía</a>
+    </nav>
+
+    <main>
+        <section id="nacional">
+            <h2>Noticias Interancionales</h2>
+            <article style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <figure style="flex: 1; margin-right: 15px;">
+                    <img src="./imgs/noticia4.jpeg" alt="Imagen de la noticia 1" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    <figcaption style="text-align: center;">El Departamento de Estado también confirmó restricciones de visado para varios funcionarios.</figcaption>
+                </figure>
+                <div style="flex: 2;">
+                    <h3>Estados Unidos anunció sanciones contra 21 miembros del régimen de Maduro por el fraude electoral y la represión</h3>
+                    <p>Estados Unidos anunció este lunes nuevas sanciones contra 21 altos funcionarios del régimen de Nicolás Maduro, en respuesta a la represión violenta, las detenciones arbitrarias y la negación de los resultados de las elecciones presidenciales del pasado 28 de julio en Venezuela, en las que la mayoría de los votantes apoyó al líder opositor Edmundo González Urrutia.</p>
+                    <a href="https://www.infobae.com/venezuela/2024/11/27/estados-unidos-anuncio-sanciones-contra-21-miembros-del-regimen-de-maduro-por-el-fraude-electoral-y-la-represion/">Leer más...</a>
+                </div>
+            </article>
+            <article style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <figure style="flex: 1; margin-right: 15px;">
+                    <img src="./imgs/noticia5.jpeg" alt="Imagen de la noticia 1" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    <figcaption style="text-align: center;">El Gobierno afirmó ante el Congreso que podría volver a los mercados a mitad del 2025 para emitir deuda “a tasa razonable”</figcaption>
+                </figure>
+                <div style="flex: 2;">
+                    <h3>Se mantienen en 222 los fallecidos por la dana en Valencia y bajan a 4 los desaparecidos</h3>
+                    <p>Según el último balance oficial del Centro de Integración de Datos (CID), en comparación con el día anterior, se ha registrado una nueva identificación, la de la última víctima, un hombre cuyo cuerpo sin vida fue recuperado el pasado lunes entre los términos municipales de Benaguasil y Vilamarxant.</p>
+                    <a href="https://www.infobae.com/espana/agencias/2024/11/27/se-mantienen-en-222-los-fallecidos-por-la-dana-en-valencia-y-bajan-a-4-los-desaparecidos/">Leer más...</a>
+                </div>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Publicidad</h3>
+            <p>Anuncio 1</p>
+            <p>Anuncio 2</p>
+            <p>Anuncio 3</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Contacto: agarrido@uade.edu.ar | Teléfono: (123) 456-7890</p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Uso</a></p>
+    </footer>
+</body>
+</html>

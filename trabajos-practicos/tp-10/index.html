@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO 10</title>
+    
+    <!-- CARRUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    
+    <!-- Lightbox2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+
+    <style>
+        .contenedores {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+            width: auto;
+            padding: 5px;
+            margin-bottom: 30px;
+            background-color: #f4f4f4;
+            border: 3px solid #000; 
+            border-radius: 10px;
+        }
+
+        .owl-carousel img {
+            display: block;
+            width: 100%;
+            height: 250px;
+        }
+
+        /*boton de whatsapp*/
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            font-size: 24px;
+            text-align: center;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px; 
+            height: 40px; 
+        }
+
+        /*icono de whatsApp */
+        .whatsapp-button img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .parallax {
+            height: 300px; 
+            background-image: url('./imgs/RB20.jpg'); 
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        
+    </style>
+
+
+</head>
+<body>
+    <!-- Carrusel -->
+    <h2>Carrusel</h2>
+    <div class="contenedores">
+        <div class="owl-carousel">
+            <div><img src="./imgs/imagen1.jpeg" alt="Imagen 1"></div>
+            <div><img src="./imgs/imagen2.jpeg" alt="Imagen 2"></div>
+            <div><img src="./imgs/imagen3.jpeg" alt="Imagen 3"></div>
+        </div>
+    </div>
+
+    
+    <!-- Fondo Parallax -->
+    <h2>Fondo Parallax</h2>
+    <div class="contenedores parallax"></div>
+
+    <!-- Lightbox -->
+    <h2>Lightbox</h2>
+    <div class="contenedores">
+        <a href="./imgs/imagen1.jpeg" data-lightbox="gallery" data-title="Imagen 1">
+            <img src="./imgs/imagen1.jpeg" alt="Imagen 1" style="width: auto; height: 250px; margin: 10px;">
+        </a>
+        <a href="./imgs/imagen2.jpeg" data-lightbox="gallery" data-title="Imagen 2">
+            <img src="./imgs/imagen2.jpeg" alt="Imagen 2" style="width: auto; height: 250px; margin: 10px;">
+        </a>
+        <a href="./imgs/imagen3.jpeg" data-lightbox="gallery" data-title="Imagen 3">
+            <img src="./imgs/imagen3.jpeg" alt="Imagen 3" style="width: auto; height: 250px; margin: 10px;">
+        </a>
+    </div>
+
+    <!-- Slider de Contenido -->
+    <h2>Slider de Contenido</h2>
+    <div class="slider">
+        <div><img src="./imgs/imagen1.jpeg" alt="Imagen 1"></div>
+        <div><img src="./imgs/imagen2.jpeg" alt="Imagen 2"></div>
+        <div><img src="./imgs/imagen3.jpeg" alt="Imagen 3"></div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.4/js/lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            // carrusel
+            $('.owl-carousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                responsive: {
+                    0: { items: 1 },
+                    600: { items: 2 },
+                    1000: { items: 3 }
+                }
+            });
+
+            // slider
+            $('.slider').slick({
+                infinite: true,  
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,  
+                autoplaySpeed: 2000,  
+                arrows: true, 
+                dots: true,
+            });
+        });
+    </script>
+</body>
+</html>

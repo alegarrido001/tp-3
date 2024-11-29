@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        section {
+            flex: 3;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        article h2 {
+            margin: 0;
+            color: #333;
+        }
+        article p {
+            margin: 10px 0;
+        }
+        article a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        article a:hover {
+            text-decoration: underline;
+        }
+        figure {
+            margin: 10px 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            margin-left: 20px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Noticias</h1>
+        <p>Tu fuente de información</p>
+    </header>
+
+    <nav>
+        <a href="./noticias-nac.html">Nacional</a>
+        <a href="./noticias-int.html">Internacional</a>
+        <a href="#deportes">Deportes</a>
+        <a href="./noticias-eco.html">Economía</a>
+    </nav>
+
+    <main>
+        <section id="nacional">
+            <h2>Deportes</h2>
+            <article style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <figure style="flex: 1; margin-right: 15px;">
+                    <img src="./imgs/noticia6.jpeg" alt="Imagen de la noticia 1" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    <figcaption style="text-align: center;">En el estadio Mario Alberto Kempes de Córdoba, el Xeneize y el Fortín se ven las caras en uno de los duelos más trascendentales del año.</figcaption>
+                </figure>
+                <div style="flex: 2;">
+                    <h3>Vélez sorprende a Boca Juniors y lo vence desde el inicio de la semifinal de la Copa Argentina</h3>
+                    <p>En el estadio Mario Alberto Kempes de Córdoba, el Xeneize y el Fortín se ven las caras en uno de los duelos más trascendentales del año</p>
+                    <a href="https://www.infobae.com/deportes/2024/11/27/boca-juniors-y-velez-disputaran-la-semifinal-de-la-copa-argentina-en-cordoba-hora-tv-y-formaciones/">Leer más...</a>
+                </div>
+            </article>
+            <article style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <figure style="flex: 1; margin-right: 15px;">
+                    <img src="./imgs/noticia1.jpeg" alt="Imagen de la noticia 1" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    <figcaption style="text-align: center;">Max Verstappen se coronó campeón mundial de la Fórmula 1 por cuarta vez a los 27 años.</figcaption>
+                </figure>
+                <div style="flex: 2;">
+                    <h3>Max Verstappen, la mente maestra de la Fórmula 1: ya ganó cuatro títulos seguidos, ¿alguien puede quitarle el quinto?</h3>
+                    <p>Con tan solo 27 años, el piloto neerlandés conquistó un nuevo mundial, consolidándose como uno de los grandes de la historia. Su histórico ingeniero, Gianpiero Lambiase, analizó para The Independent lo que puede pasar el año que viene</p>
+                    <a href="https://www.infobae.com/deportes/2024/11/27/max-verstappen-la-mente-maestra-de-la-formula-1-ya-gano-cuatro-titulos-seguidos-alguien-puede-quitarle-el-quinto/">Leer más...</a>
+                </div>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Publicidad</h3>
+            <p>Anuncio 1</p>
+            <p>Anuncio 2</p>
+            <p>Anuncio 3</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Contacto: agarrido@uade.edu.ar | Teléfono: (123) 456-7890</p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Uso</a></p>
+    </footer>
+</body>
+</html>

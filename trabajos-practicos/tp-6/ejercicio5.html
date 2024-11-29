@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+    <style>
+        .contenedor{
+            display: flex;
+            background-color:dimgray;
+            width: 500px;
+            height: 500px;
+            flex-direction: row;
+            align-items: center;
+        }
+        .elementos{
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+        }
+        @media (max-width: 768px){
+            .contenedor{
+                flex-direction: column;
+                align-items: center;}
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+    <div class="elementos"></div>
+    <div class="elementos"></div>
+    <div class="elementos"></div>
+    <div class="elementos"></div>
+    </div>
+</body>
+</html>

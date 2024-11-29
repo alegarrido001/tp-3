@@ -1,0 +1,58 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h1 {
+    color: blue;
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    color:orange; 
+}
+
+#rojo{
+    color: red;
+}
+
+#verde{
+    color:yellowgreen;
+}
+
+#rosa_claro{
+    color:pink;
+}
+
+#violeta_claro{
+    color: plum;
+}
+
+#rosa{
+    color:fuchsia;
+}
+
+em {
+    font-style: normal; 
+}
+
+.em1{
+    color: brown;
+}
+
+.em2{
+    color:green;
+}
+
+.em3{
+    color:lightcoral;
+}
+
+.em4{
+    color:darkslateblue;
+}
+
+.em5{
+    color: darkorchid;
+}

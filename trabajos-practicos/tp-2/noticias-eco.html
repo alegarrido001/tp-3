@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            background-color: #555;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        section {
+            flex: 3;
+            padding: 20px;
+        }
+        article {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 15px;
+        }
+        article h2 {
+            margin: 0;
+            color: #333;
+        }
+        article p {
+            margin: 10px 0;
+        }
+        article a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        article a:hover {
+            text-decoration: underline;
+        }
+        figure {
+            margin: 10px 0;
+            text-align: center;
+        }
+        figure img {
+            max-width: 100%;
+            height: auto;
+        }
+        aside {
+            flex: 1;
+            padding: 20px;
+            margin-left: 20px;
+            background: #f4f4f4;
+            border: 1px solid #ddd;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        footer a {
+            color: #007BFF;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Economía</h1>
+        <p>Tu fuente de información</p>
+    </header>
+
+    <nav>
+        <a href="./noticias-nac.html">Nacional</a>
+        <a href="./noticias-int.html">Internacional</a>
+        <a href="./noticias-dep.html">Deportes</a>
+        <a href="#economia">Economía</a>
+    </nav>
+
+    <main>
+        <section id="nacional">
+            <h2>Deportes</h2>
+            <article style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <figure style="flex: 1; margin-right: 15px;">
+                    <img src="./imgs/noticia7.jpeg" alt="Imagen de la noticia 1" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    <figcaption style="text-align: center;">El BID giró USD 600 millones a la Argentina y las reservas aumentaron en USD 533 millones, a USD 31.480 millones, un máximo desde junio de 2023.</figcaption>
+                </figure>
+                <div style="flex: 2;">
+                    <h3>El BCRA compró USD 227 millones y sus reservas crecieron más de USD 500 millones por el ingreso de un préstamo.</h3>
+                    <p>Previo al feriado en los EEUU para este jueves -por la conmemoración del Día de Acción de Gracias- el monto operado en el mercado mayorista registró un muy alto volumen de USD 441,8 millones en el segmento de contado, que le permitió al Banco Central alzarse con compras por USD 227 millones en el día, el 51,4% del total en oferta. </p>
+                    <a href="https://www.infobae.com/economia/2024/11/27/el-bcra-compro-usd-227-millones-y-sus-reservas-crecieron-mas-de-usd-500-millones-por-el-ingreso-de-un-prestamo/">Leer más...</a>
+                </div>
+            </article>
+            <article style="display: flex; align-items: flex-start; margin-bottom: 20px;">
+                <figure style="flex: 1; margin-right: 15px;">
+                    <img src="./imgs/noticia8.jpeg" alt="Imagen de la noticia 1" style="max-width: 100%; height: auto; border-radius: 10px;">
+                    <figcaption style="text-align: center;">El dólar libre cerró negociado con ganancia de cinco pesos en el día. En el balance del mes pierde 55 pesos o 4,6%. El BCRA compró USD 22 millones en el mercado.                    </figcaption>
+                </figure>
+                <div style="flex: 2;">
+                    <h3>Dólar hoy: la cotización libre subió a $1.135, pero mantiene amplias pérdidas en noviembre</h3>
+                    <p>Una mejora de USD 65 millones o 25% en el monto operado, que llegó a USD 320,7 millones en el segmento de contado, no implicó este martes un aumento en las compras que efectúa el Banco Central, que absorbió USD 22 millones con su intervención, el 6,9% de la oferta privada.</p>
+                    <a href="https://www.infobae.com/economia/2024/11/26/dolar-hoy-a-cuanto-se-negocian-todas-las-cotizaciones-minuto-a-minuto-este-martes-26-de-noviembre/">Leer más...</a>
+                </div>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Publicidad</h3>
+            <p>Anuncio 1</p>
+            <p>Anuncio 2</p>
+            <p>Anuncio 3</p>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Contacto: agarrido@uade.edu.ar | Teléfono: (123) 456-7890</p>
+        <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Uso</a></p>
+    </footer>
+</body>
+</html>
