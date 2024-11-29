@@ -133,6 +133,11 @@ footer {
 #verificaciones{
     margin-left: 10px;
 }
+
+#verificaciones h2{
+    text-decoration: underline;
+
+}
 #imagenes {
         display: flex;
         gap: 10px; 
